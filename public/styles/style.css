@@ -1,0 +1,108 @@
+div.shad {
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 5px 10px 15px black;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: inside;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.about-section {
+    background: url(picc.jpg) no-repeat left top;
+    background-size: 55%;
+    background-color: #05345e;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.inner-container {
+    width: 55%;
+    float: right;
+    background-color: #e8eef3;
+    padding: 150px;
+}
+
+.inner-container h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+@media screen and (max-width:1200px) {
+    .inner-container {
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .about-section {
+        padding: 0;
+    }
+    .inner-container {
+        padding: 60px;
+    }
+}
+
+.cont {
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: #314455;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: mymove 5s infinite;
+}
+
+#timer {
+    background-image: url("Rampage.jpg");
+    width: auto;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 5px gold;
+}

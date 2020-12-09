@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On The Limb</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                 <a href="">On The <span>Limb</span></a>
+            </div>
+            <a href="javascript:void(0)" class="ham-burger">
+              <span></span>	
+              <span></span>
+            </a>
+            <div class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#exercises">Exercises</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#price">Price</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+   </header>
+  
+  
+    
+    <section class="home wow flash" id="home">
+         <div class="container">
+               <h1 class="wow Left" data-wow-delay="1s">It's <span>gym</span> time. Let's go</h1>
+               <h1 class="wow Right" data-wow-delay="1s">We are ready to <span>fit you</span></h1>
+			   
+			   <!--<a href="" class="btn">Login</a>
+				<a href="" class="btn">Register</a>-->
+				
+				
+    <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- Button to open the modal register form -->
+<button onclick="document.getElementById('id02').style.display='block'">Register</button>
+					 
+         </div>
+          
+              <a href="#about" class="go-down">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+        
+		
+		
+		
+
+
+<!-- The Modal - Register -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <!--<form class="modal-content animate" action="/action_page.php"> nooope-->
+  <form class="modal-content animate">
+
+    <div class="container">
+      <label for="memail"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="memail" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+	   <button type="button" onclick=register(memail.value,psw.value) class="s">Register</button>
+	   
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+	
+	 <div class="bottomdiv hide" id="footer">
+	 <h1>lol</h1>
+	<iframe src="http://example.com" width="990" height="110"  scrolling="no"></iframe>
+	</div>
+
+  </form>
+</div>
+
+
+
+<!-- The Modal - LOGIN -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <!--<form class="modal-content animate" action="/action_page.php"> nooope-->
+  <form class="modal-content animate">
+    
+
+    <div class="container">
+      <label for="memail"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="memail" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+	   <button type="button" onclick=signIn(memail.value,psw.value) class="s">Login</button>
+	   
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+  
+    </section>
+  
+  
+  
+  
+  
+ 
+  
+
+    <section class="contact" id="contact">
+       <div class="container">
+          <div class="content">
+              <div class="box form Left">
+                 <form>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <input type="text" placeholder="Enter Mobile">
+                    <textarea placeholder="Enter Message"></textarea>
+                    <button type="submit">Send Message</button>
+                 </form>
+              </div>
+              <div class="box text Right 2">
+                   <h2>Get Connected with Gym</h2>
+                    <p class="title-p"> Put information</p>
+                    <div class="info">
+                        <ul>
+                            <li><span class="fa fa-map-marker"></span> Mandeville, Manchester Rd, </li>
+                            <li><span class="fa fa-phone"></span> 876-543-4567</li>
+                            <li><span class="fa fa-envelope"></span> onthelimbgym@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                         <a href=""><span class="fa fa-facebook"></span></a>
+                         <a href=""><span class="fa fa-linkedin"></span></a>
+                         <a href=""><span class="fa fa-skype"></span></a>
+                         <a href=""><span class="fa fa-youtube-play"></span></a>
+                    </div>
+  
+                    <div class="copy">
+                         &copy; Group
+                    </div>
+              </div>
+          </div>
+       </div>
+    </section>
+   
+  
+  
+  
+   
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+  
+        $(".ham-burger, .nav ul li a").click(function(){
+         
+          $(".nav").toggleClass("open")
+  
+          $(".ham-burger").toggleClass("active");
+        })      
+        $(".accordian-container").click(function(){
+            $(".accordian-container").children(".body").slideUp();
+            $(".accordian-container").removeClass("active")
+            $(".accordian-container").children(".head").children("span").removeClass("fa-angle-down").addClass("fa-angle-up")
+            $(this).children(".body").slideDown();
+            $(this).addClass("active")
+            $(this).children(".head").children("span").removeClass("fa-angle-up").addClass("fa-angle-down")
+        })
+  
+         $(".nav ul li a, .go-down").click(function(event){
+           if(this.hash !== ""){
+  
+                event.preventDefault();
+  
+                var hash=this.hash; 
+  
+                $('html,body').animate({
+                  scrollTop:$(hash).offset().top
+                },800 , function(){
+                   window.location.hash=hash;
+                });
+  
+                // add active class in navigation1
+                $(".nav ul li a").removeClass("active")
+                $(this).addClass("active")
+           }
+        })
+  })
+  
+  </script>
+  <script>
+      a = new a(
+        {
+          animateClass: 'animated',
+          offset:       0,
+        }
+      );
+      a.init();
+    </script>
+	
+	
+	
+	
+	
+	
+	
+		  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  </body>
+  </html>
+  
+  

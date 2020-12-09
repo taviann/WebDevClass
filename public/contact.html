@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- Scripts, Stylesheets, Favicon, Metadata-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icon.png">
+
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles2.css" />
+    <link rel="stylesheet" href="styles/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="styles/bootstrap-4.5.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="styles/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Gamers</title>
+</head>
+
+<body style="background: #FCCD04;">
+
+    <!----  
+        Welcome sir, This is a contact web page.
+    ---->
+
+    <head>
+        <div class="container-fluid" style="background: #4285f4;">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-6">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="90px" width="230px"></a>
+                    </div>
+                </div>
+                <div class="col-">
+                    </br>
+                    </br>
+                    <P style="color: white;"> Log in | Register</P>
+                </div>
+                <div class="col-sm">
+                    </br>
+                    <nav class="navbar navbar-light ">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color: white;">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </head>
+
+
+    <!-- NAVBAR-->
+    <p>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="background: #314455; height: 60px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">&nbsp Home &nbsp<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tournaments.html">&nbsp Tournaments &nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="members.html">&nbsp Members &nbsp</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">&nbsp Contact &nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">&nbsp About &nbsp</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        </div>
+    </p>
+    <!-- Forms and Validations-->
+    <div class="jumbotron jumbotron-fluid" style="background-image: url('icon.png'); background-repeat: no-repeat;">
+        <div class="container">
+            <h1 class="display-4" style="text-align: center; color: darkblue;">CONTACT</h1>
+            <br>
+            <p class="lead" style="text-align: center;">Hello fellow gamers,<i class='fas fa-gamepad' style='font-size:48px; color: darkblue'></i> if you have any problems, message or call us as soon as possible.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid" style="background-color: #4285f4; color: white;">
+
+        <form style="margin: auto;">
+            <div class="form-row justify-content-center align-items-center">
+                <div class="col-md-5 mb-6">
+                    <label for="validationDefault01">First name</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required>
+                </div>
+                <div class="col-md-5 mb-6">
+                    <label for="validationDefault02">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required>
+                </div><br>
+                <div class="col-md-5 mb-6">
+                    <label for="validationDefaultUsername">Username</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2">@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 mb-6">
+                    <label for="validationDefaultUsername">Telephone</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1" ">(876)</span>
+                                <input type="text " class="form-control " id="validationDefaultUsername " placeholder="Telephone " aria-describedby="inputGroupPrepend2 " required>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="center " style="padding: 15px; "> 
+                            <select class="custom-select my-1 mr-sm-2 " style="width: 30%; margin-left: -13%; ">
+                  <option selected>Choose your level of gaming</option>
+                  <option value="1 ">Beginner</option>
+                  <option value="2 ">Intermediate</option>
+                  <option value="3 ">Expert</option>
+                </select>
+                    </div>
+                </div>
+                    <br>
+                    <textarea placeholder="Please type your message here " class="form-control; " id="comment " style="margin-left: 8%; width: 700px; height: 200px; " required></textarea>
+                    <br> <br>
+                <button class="btn btn-primary " type="submit " style="margin-left: 8%; background-color: darkslateblue; ">Submit Mail</button>
+                <br>
+            </form>
+            <br><br>
+        </div>
+    <br><br><br>
+
+        <!-- Cards-->
+        <div class="container-fluid; " style="background: #4285f4; ">
+            <h4 style="color:white; margin-left: 1%; ">Contact us at... </h4>
+            <br>
+            <p style="color: white; margin-left: 1%; ">Our Email: gamerswinners34@gmail.com</p>
+            <p style="color: white; margin-left: 1%; ">Our Phone Number: (876) 963-7276</p>
+            <h5 style="color:white; margin-left: 1%; ">Northern Caribbean University</h5>
+            <p style="color: white; margin-left: 1%; "> Computer Information Science Department, Manchester Rd, Mandeville <a style="color: lime; " href="https://www.google.com/maps/place/Northern+Caribbean+University:+Department+of+Computer+and+Information+Sciences/@18.0156406,-77.5011075,17z/data=!3m1!4b1!4m5!3m4!1s0x8edb95897d52a933:0x9564ba8648e3594e!8m2!3d18.0156355!4d-77.4989188 "
+                    target="_blank ">(View Map)</a></p>
+
+        </div>
+        <br>
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col ">
+                    <p>Follow Us</p>
+                </div>
+                <div class="col ">
+                    <a href="https://discord.com/ "><img src="images/icons/discord.webp " width="50px " height="50px "></a>
+                </div>
+                <div class="col ">
+                    <a href="https://www.facebook.com/ "><img src="images/icons/facebook.png " width="50px " height="50px "></a>
+                </div>
+                <div class="col ">
+                    <a href="https://www.instagram.com/ "><img src="images/icons/insta.png " width="50px " height="50px "></a>
+                </div>
+                <div class="col ">
+                    <a href="https://www.twitch.tv/ "><img src="images/icons/twitch.webp " width="50px " height="50px "></a>
+                </div>
+                <div class="col ">
+                    <a href="https://www.youtube.com/ "><img src="images/icons/youtube.png " width="50px " height="50px "></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Club's Copyright-->
+        <footer style="background: #05345e; ">
+            <center>
+                <p style="color: white; "> All Rights Reserved Gamers Club Jamaica 2020 &#169</p>
+            </center>
+        </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+div.absolute {
+    position: absolute;
+    top: 665px;
+    left: 520px;
+    width: 900px;
+}
+
+.center {
+    display: flex;
+    width: 900px;
+}
