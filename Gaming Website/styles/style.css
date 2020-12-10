@@ -27,12 +27,10 @@ body {
 }
 
 .about-section {
-  
     background-size: 55%;
     background-color: #4285f4;
     overflow: hidden;
     padding: 100px 0;
-    
 }
 
 .inner-container {
@@ -88,10 +86,10 @@ body {
 }
 
 .centrrr {
-  margin: 0 auto;
-  border: 2px solid #4285f4;
-  border-radius: 35px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border: 2px solid #4285f4;
+    border-radius: 35px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .cont {
@@ -106,14 +104,13 @@ body {
 
 
 /*lol this keeps the list from being behind the carousel or anything else when in mobile view - Jermaine*/
-.navbar-nav > li {
-  z-index: 3;
-  border: 2px solid #4285f4;
-  border-radius: 5px;
-  background-color: #4285f4;
-  margin: 2px
-}
 
+.navbar-nav>li {
+    z-index: 3;
+    border-radius: 5px;
+    background-color: #314455;
+    margin: 2px;
+}
 
 #timer {
     background-image: url("Rampage.jpg");
